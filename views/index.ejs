@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/CSS/index.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <!-- DEBUG: images from DB = <%= images && images.length ? images.length : 0 %> -->
+
+    <!-- 🔹 Icon Strip -->
+    <div class="icon-strip-wrapper">
+      <img
+        src="<%= (img['Icon Strip'] && img['Icon Strip'].url) || '/images/index_01.jpg' %>"
+        alt="<%= (img['Icon Strip'] && img['Icon Strip'].alt) || 'Reptile Icons' %>"
+        class="index-01"
+      />
+    </div>
+
+    <!-- 🔹 Header -->
+    <header>
+      <img
+        src="<%= (img['Logo'] && img['Logo'].url) || '/images/Logo.gif' %>"
+        alt="<%= (img['Logo'] && img['Logo'].alt) || "Hoffmann's Reptile Store Logo" %>"
+        class="logo"
+      />
+      <nav>
+        <a href="/staff">Staff</a>
+        <a href="/services">Services</a>
+        <a href="/pictures">Pictures</a>
+        <a href="/animals">Specials &amp; Animals</a>
+        <a href="/">Home</a>
+      </nav>
+    </header>
+
+    <!-- 🔹 Main Content -->
+    <div class="main-content">
+
+      <!-- 🔸 Left Column -->
+      <div class="left-column">
+        <p>
+          <strong>Dan Hoffmann</strong> has been uniting reptiles, amphibians and other exotic pets
+          with caring owners since 1980. Visit Hoffmann’s Reptiles in Concord today and experience
+          his special brand of customer care and service.
+        </p>
+
+        <div class="animal-images">
+          <img
+            src="<%= (img['Lizard'] && img['Lizard'].url) || '/images/index_03.jpg' %>"
+            alt="<%= (img['Lizard'] && img['Lizard'].alt) || 'Lizard' %>"
+            class="index-03"
+          />
+        </div>
+      </div>
+
+      <!-- 🔸 Right Column -->
+      <div class="right-column">
+        <a href="https://www.facebook.com/groups/139979129355378/" target="_blank">
+          <img
+            src="<%= (img['Storefront and Facebook'] && img['Storefront and Facebook'].url) || '/images/index_02.jpg' %>"
+            alt="<%= (img['Storefront and Facebook'] && img['Storefront and Facebook'].alt) || 'Storefront and Facebook' %>"
+            class="index-02"
+          />
+        </a>
+        <img
+          src="<%= (img['Additional Reptile Image'] && img['Additional Reptile Image'].url) || '/images/index_004.jpg' %>"
+          alt="<%= (img['Additional Reptile Image'] && img['Additional Reptile Image'].alt) || 'Additional Reptile Image' %>"
+          class="index-04"
+        />
+      </div>
+    </div>
+
+    <!-- 🔹 Divider Line -->
+    <div class="divider"></div>
+
+    <!-- 🔹 Footer -->
+    <footer>
+      <div>
+        <strong>Hoffmann’s Reptiles</strong> - (925) 671-9106<br />
+        2359 Concord Blvd, Concord, CA 94520
+      </div>
+      <a
+        href="https://www.google.com/maps/place/2359+Concord+Blvd,+Concord,+CA+94520"
+        target="_blank"
+        class="map-button"
+      >MAP</a>
+    </footer>
+
+  </div>
+</body>
+</html>

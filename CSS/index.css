@@ -1,0 +1,231 @@
+
+body {
+  background-color: black;
+  color: #FFD700;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ─── Image Classes by File Name ──────────────── */
+.index-01 {
+  width: 500px;
+  height: 50px;
+  object-fit: cover;
+  object-fit: contain; 
+}
+
+.index-02 {
+  max-width: 100%;
+  height: auto;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+
+.index-03 {
+  width: 370px;
+  height: 200px;
+  margin-left: 170px;
+}
+
+.index-04 {
+  width: 368px;
+  height: 100px;
+  margin-top: -30px;
+  margin-right: 200px;
+  margin-bottom: 0; /* Closed gap to divider */
+  transform: translateY(10px);
+}
+
+.logo {
+  width: 350px;
+  max-width: 100%;
+  margin-left: 180px;
+}
+
+/* ─── Icon Strip ──────────────────────────────── */
+.icon-strip-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  margin-left: 330px;
+  transform: translateY(50px);
+}
+
+/* ─── Header: Logo + Nav Bar ─────────────────── */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid #FFD700;
+  padding-bottom: 5px;
+  margin-right: 200px;
+  margin-top: 17px;
+}
+
+nav a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ─── Main Content Area ───────────────────────── */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+.left-column {
+  flex: 1;
+  max-width: 600px;
+}
+
+.left-column p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-left: 180px;
+}
+
+.animal-images {
+  display: flex;
+  gap: 20px;
+}
+
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* ─── Divider Line ────────────────────────────── */
+.divider {
+  border-top: 2px solid white;
+  max-width: 780px;
+  margin: -20px auto 10px auto; /* Pulls divider closer to image */
+}
+
+/* ─── Footer ──────────────────────────────────── */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.map-button {
+  background-color: black;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.map-button:hover {
+  background-color: #FFD700;
+  color: black;
+}
+
+/* ─── Responsive (Mobile) Styles ─────────────── */
+/* Makes site scale better on iPhones, tablets, etc. */
+@media (max-width: 1024px) {
+  .icon-strip-wrapper {
+    margin-left: 0;
+    transform: translateY(20px);
+  }
+
+  nav {
+    margin-right: 0;
+  }
+
+  .index-02,
+  .index-03,
+  .index-04 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-column {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .animal-images {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .icon-strip-wrapper {
+    margin-left: 0;
+  }
+
+  .index-01 {
+    width: 100%;
+    height: auto;
+  }
+
+  .divider {
+    max-width: 100%;
+    margin-top: -30px;
+  }
+
+  .index-03 {
+    margin-left: 0;
+  }
+
+  .left-column p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .index-01 {
+    width: 90%;
+  }
+
+  .logo {
+    width: 80%;
+    margin-left: 0;
+  }
+
+  nav {
+    font-size: 14px;
+    gap: 10px;
+  }
+}

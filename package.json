@@ -1,20 +1,29 @@
 {
   "name": "hoffmanssite",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Hoffmann's Reptile Store - Express + EJS",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "morgan": "^1.10.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NewYork3161/Hoffman-s-reptile-store-revive-webpage.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/NewYork3161/Hoffman-s-reptile-store-revive-webpage/issues"
   },
-  "homepage": "https://github.com/NewYork3161/Hoffman-s-reptile-store-revive-webpage#readme"
+  "homepage": "https://github.com/NewYork3161/Hoffman-s-reptile-store-revive-webpage#readme",
+  "license": "ISC",
+  "author": ""
 }
